@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "queue",
+      "metadata": {
+        "name": {
+          "defaultValue": "in_str_queueName",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "in_str_orchestratorFolderPath_BusinessProcess",
+          "isExpression": true
+        }
+      }
+    },
+    {
+      "resource": "queue",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "in_str_orchestratorFolderPath_BusinessProcess",
+          "isExpression": true
+        }
+      }
+    },
+    {
+      "resource": "queue",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "in_str_OrchestratorFolderPath",
+          "isExpression": true
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "GlobalErrorInfo",
+          "isExpression": false
+        },
+        "folderPath": {
+          "defaultValue": "io_ProcessSetup.BusinessProcess.OrchestratorFolderPath",
+          "isExpression": true
+        }
+      }
+    },
+    {
+      "resource": "queue",
+      "metadata": {
+        "name": {
+          "defaultValue": "in_str_QueueName",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "IF(in_str_CustomOrchestratorQueueFolderPath<>\"\" and in_str_CustomOrchestratorQueueFolderPath isNot Nothing,in_str_CustomOrchestratorQueueFolderPath,in_ProcessSetup.BusinessProcess.OrchestratorFolderPath)",
+          "isExpression": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "in_str_queueName",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "in_str_orchestratorFolderPath_BusinessProcess",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "defaultValue": "in_str_orchestratorFolderPath_BusinessProcess",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "defaultValue": "in_str_OrchestratorFolderPath",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "GlobalErrorInfo",
+          "isExpression": false
+        },
+        "folderPath": {
+          "defaultValue": "io_ProcessSetup.BusinessProcess.OrchestratorFolderPath",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "in_str_QueueName",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "IF(in_str_CustomOrchestratorQueueFolderPath<>\"\" and in_str_CustomOrchestratorQueueFolderPath isNot Nothing,in_str_CustomOrchestratorQueueFolderPath,in_ProcessSetup.BusinessProcess.OrchestratorFolderPath)",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}
