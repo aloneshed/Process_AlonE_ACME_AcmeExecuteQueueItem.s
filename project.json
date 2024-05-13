@@ -4,7 +4,8 @@
   "description": "Acme-ExecuteQueueItem.s",
   "main": "Main.xaml",
   "dependencies": {
-    "HmsTeam.Framework.Activities": "2024.1.6"
+    "HmsTeam.Framework.Activities": "2024.1.6",
+    "UiPath.Mail.Activities": "1.22.2"
   },
   "webServices": [],
   "entitiesStores": [],
