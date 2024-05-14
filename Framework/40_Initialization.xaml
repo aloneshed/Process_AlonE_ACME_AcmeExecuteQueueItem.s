@@ -101,7 +101,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Seq_Prepare business outlook" sap:VirtualizedContainerService.HintSize="450,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence DisplayName="Seq_Prepare business outlook" sap:VirtualizedContainerService.HintSize="496,468.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -119,7 +119,7 @@
         <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="434,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Flowchart_4">
+              <Flowchart DisplayName="Flowchart_inRetry_Prepare business outlook" sap:VirtualizedContainerService.HintSize="634,637.333333333333" sap2010:WorkflowViewState.IdRef="Flowchart_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -139,24 +139,43 @@
                       <av:Size x:Key="ShapeSize">200,84.6666666666667</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="1114.66666666667,631.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_24">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'ללא שם - איש קשר'" sap:VirtualizedContainerService.HintSize="388,107.333333333333" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
-                      <ui:WaitUiElementAppear.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa4784ca-0b0a-422e-b0bb-e9e63287b740" InformativeScreenshot="cbd16841362424699bc0575bd4113f25" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='‫ללא שם‬ - איש קשר  ' /&gt;&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOfficeCaption' name='‫‫ללא שם‬‬  -  איש קשר  ' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:WaitUiElementAppear.Target>
-                    </ui:WaitUiElementAppear>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1052.66666666667,520.666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1016,440.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="954,330" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V1">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
                   </Sequence>
                 </FlowStep>
                 <FlowDecision x:Name="__ReferenceID1" Condition="[int_attemptsToOpenBusinessApp&gt;1]" DisplayName="is not first attempt?" sap:VirtualizedContainerService.HintSize="109.333333333333,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
@@ -232,7 +251,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">268.895,181.7 268.895,211.7 277.975,211.7 277.975,247.7</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="increase attemps var" sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign DisplayName="increase attemps var" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Assign_8">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[int_attemptsToOpenBusinessApp]</OutArgument>
                     </Assign.To>
