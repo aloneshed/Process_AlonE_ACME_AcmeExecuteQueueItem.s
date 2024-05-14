@@ -1,8 +1,8 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Initialization" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:hm="clr-namespace:HMS.Modeling;assembly=HmsTeam.UiPath.Shared" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Initialization" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:hm="clr-namespace:HMS.Modeling;assembly=HmsTeam.UiPath.Shared" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Type 'hm:ProcessSetup' ('clr-namespace:HMS.Modeling;assembly=Modeling') could not be resolved and was automatically replaced with 'UnknownType'" Name="io_ProcessSetup" Type="InOutArgument(hm:ProcessSetup)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1410.4,2275.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>592,620</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -31,39 +31,61 @@
       <x:String>System.Runtime.InteropServices</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
       <x:String>HMS.Modeling</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+      <AssemblyReference>HmsTeam.UiPath.Shared</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Modeling</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
-      <AssemblyReference>System.ValueTuple</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
-      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>Modeling</AssemblyReference>
-      <AssemblyReference>HmsTeam.UiPath.Shared</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Seq_Init" sap:VirtualizedContainerService.HintSize="862.4,2210.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+  <Sequence DisplayName="Seq_Init" sap:VirtualizedContainerService.HintSize="574,555.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="int_attemptsToOpenBusinessApp" />
     </Sequence.Variables>
@@ -72,21 +94,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Seq_Prepare Business apps" sap:VirtualizedContainerService.HintSize="800,2098.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+    <Sequence DisplayName="Seq_Prepare Business apps" sap:VirtualizedContainerService.HintSize="512,444.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_26">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Seq_Prepare business app #1" sap:VirtualizedContainerService.HintSize="737.6,440.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence DisplayName="Seq_Prepare business outlook" sap:VirtualizedContainerService.HintSize="450,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="360,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+        <Assign sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Int32">[int_attemptsToOpenBusinessApp]</OutArgument>
           </Assign.To>
@@ -94,16 +116,16 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="360,228.8" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
+        <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="434,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="318.4,52.8" sap2010:WorkflowViewState.IdRef="Flowchart_4">
+              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Flowchart_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-                    <av:Size x:Key="ShapeSize">60,75.2</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 300.095,107.7 300.095,127.7</av:PointCollection>
+                    <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,107.166666666667 268.895,107.166666666667 268.895,127.7</av:PointCollection>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -114,26 +136,35 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">230,495.6</av:Point>
-                      <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+                      <av:Size x:Key="ShapeSize">200,84.6666666666667</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'ללא שם - איש קשר'" sap:VirtualizedContainerService.HintSize="388,107.333333333333" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                      <ui:WaitUiElementAppear.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa4784ca-0b0a-422e-b0bb-e9e63287b740" InformativeScreenshot="cbd16841362424699bc0575bd4113f25" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='‫ללא שם‬ - איש קשר  ' /&gt;&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOfficeCaption' name='‫‫ללא שם‬‬  -  איש קשר  ' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:WaitUiElementAppear.Target>
+                    </ui:WaitUiElementAppear>
                   </Sequence>
                 </FlowStep>
-                <FlowDecision x:Name="__ReferenceID1" DisplayName="is not first attempt?" sap:VirtualizedContainerService.HintSize="108.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
-                  <FlowDecision.Condition>
-                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="int_attemptsToOpenBusinessApp&gt;1" />
-                  </FlowDecision.Condition>
+                <FlowDecision x:Name="__ReferenceID1" Condition="[int_attemptsToOpenBusinessApp&gt;1]" DisplayName="is not first attempt?" sap:VirtualizedContainerService.HintSize="109.333333333333,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <av:Point x:Key="ShapeLocation">250.641666666667,247.7</av:Point>
-                      <av:Size x:Key="ShapeSize">108.8,87.2</av:Size>
+                      <av:Size x:Key="ShapeSize">109.333333333333,86.6666666666667</av:Size>
                       <av:PointCollection x:Key="TrueConnector">250.641666666667,291.3 130,291.3 130,366.04</av:PointCollection>
                       <av:PointCollection x:Key="FalseConnector">359.441666666667,291.3 389.441666666667,291.3 389.441666666667,465.6 330,465.6 330,495.6</av:PointCollection>
                     </scg:Dictionary>
@@ -143,16 +174,46 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">30,366.04</av:Point>
-                          <av:Size x:Key="ShapeSize">200,83.2</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">130,449.24 130,530 230,530</av:PointCollection>
+                          <av:Size x:Key="ShapeSize">200,84.6666666666667</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">130,450.706666666667 130,537.933333333333 230,537.933333333333</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_23">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
+                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="484,136.666666666667" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="outlook" />
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: תיבת דואר נכנס - aloneshed1@gmail.com - Outlook" sap:VirtualizedContainerService.HintSize="484,810.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,474.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'פריטים חדשים'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="1713, 111, 80, 105" FriendlyName="'פריטים חדשים'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' role='פריט תפריט' check:fulltext='פריטים חדשים' /&gt;" Guid="28f74984-a61b-46b2-bb5c-bff1f088431f" ImageBase64="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" InformativeScreenshot="e490f6eaa893175a0e549e21395cc26b.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'איש קשר'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="2, 146, 384, 36" FriendlyName="'איש קשר'" FullSelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='איש קשר' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='איש קשר' role='menu item' automationid='' check:text='איש קשר' /&gt;" Guid="d25f0256-ba2f-435d-9fe3-04cde97c9930" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYQAAAAoCAYAAAD+FI3yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOVSURBVHhe7du9axRBGMdx/6pT0MrCUq6x0sZOsFmu9AUOIZXKCgpaaGG/hXiFIsREDbKkMBF8xSJCFhQhf8N4M7tztzvz7MtlsubkvgMfuezM7k6a5zczOU+Mx2OlDQYDAMAKsjlAIADAivMCYTgcAgBWEIEAADAIBACAQSAAAAwCAQBgEAgAAINAAAAYBAIAwCAQAAAGgQAAMAgEAFhCo9GoF9K7LAIBAJaQLt4HBwdHikAAgP8QgQAAMKRAuPsyU2dvvVPn1rbU47d/vP42BAKAQJFK0kx5LctUmsQqcsbHqe5Lul2PEqWfnMalMXVNvy+O5vc2ONwcpr+n/TWdMVHRkSXS+4v70ljoOzw3EJ69+ahOXntdsbXzozKmDYEAIFCpUErNKZ5yMY6VqfVO0cwLbaaSKP+5MRCKJhflqsPNofp7Vt9j++Zz9fp6DoS15z+9QHi08bsyZjKZiGw/gQCgF1E0LbBFAbUrfK15FV66ZgupV7hrFM/oMj5sDnJwzK5P/40r1/9NILBDALDk/OIpFeN8Fe4U0qJAd1nxW/LK3xc2h/oCH5kHO33FtWrQhHMDQVvf/qYuPdhRlx/uqve7fhhIuwPN9hMIAHrkF0+/GOeh4Rb+vI5KRzD1pEIvCZtDTSDYHUrR9N8corj7rmVR5UD4vpepq08/q4v3P6i9/V+G/qyv6T47rg2BAKBHLYFgj5XcgmmLq1N0mwu+XNQlIXOQAyF/d/6M4nPRsrRuvmHKgXD+djo7JrrzYt+wP+s+O07aHWi2n0AA0KOaQLAty6YF0/0mUnGPtzJvDoT8ud12FCFzEOUTm4+1YVIbXuHKgWCLv3bq+oZRvmbHtSEQAPSoZYfgsYVYD/FX+vK90fR6flOX3YEWMgeJ9Lzmr6KGKwfCmRublQAo0312nLQ70Gw/gQCgRx0DIdLn7Wm+qtatplh795a+ybRI4Q2Zg0R83ixYOu4yFlQOhFfpF3XlySd14d62On1z09Cf9bX17a+zcW0IBAA9qgmEhuYf38xVC689q+/+H9KskDlI5ECY6vHoqBwIR4VAANCjjoFgzvETFbespN1ASDrcIwmZg6Q2ELTiZUd9dEQgAFhpjYV3xeji3QfpXRaBAGApLNqkZyAMgQBgabBDOF4EAoClQSAcLwIBAGAQCAAAg0AAABgEAgDAIBAAAAaBAAAwCAQAgOEFwmAwAACsIAIBAGDkOTBWfwEMEKydHUVi9QAAAABJRU5ErkJggg==" InformativeScreenshot="8af6cc567f2c8d63db4cc4841f79fcc3.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" IconBase64="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" InformativeScreenshot="9ab8165b92b45e6e5bd127a4b00b2386.png" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook'/&gt;" />
+                          </uix:NApplicationCard.TargetApp>
+                        </uix:NApplicationCard>
                       </Sequence>
                       <FlowStep.Next>
                         <x:Reference>__ReferenceID0</x:Reference>
@@ -167,11 +228,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">168.895,127.7</av:Point>
-                      <av:Size x:Key="ShapeSize">262.4,60</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">300.095,187.7 300.095,217.7 305.041666666667,217.7 305.041666666667,247.7</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">200,54</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">268.895,181.7 268.895,211.7 277.975,211.7 277.975,247.7</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="increase attemps var" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign DisplayName="increase attemps var" sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[int_attemptsToOpenBusinessApp]</OutArgument>
                     </Assign.To>
@@ -203,14 +264,14 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:RetryScope>
       </Sequence>
-      <Sequence DisplayName="Seq_Prepare business app #2" sap:VirtualizedContainerService.HintSize="737.6,440.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+      <Sequence DisplayName="Seq_Prepare business app #2" sap:VirtualizedContainerService.HintSize="450,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="361.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Int32">[int_attemptsToOpenBusinessApp]</OutArgument>
           </Assign.To>
@@ -218,10 +279,10 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:RetryScope DisplayName="Retry_Prepare business app #2" sap:VirtualizedContainerService.HintSize="361.6,228.8" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:03">
+        <ui:RetryScope DisplayName="Retry_Prepare business app #2" sap:VirtualizedContainerService.HintSize="434,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #2" sap:VirtualizedContainerService.HintSize="320,52.8" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #2" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -249,10 +310,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </Sequence>
                 </FlowStep>
-                <FlowDecision x:Name="__ReferenceID5" DisplayName="is not first attempt?" sap:VirtualizedContainerService.HintSize="108.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-                  <FlowDecision.Condition>
-                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="int_attemptsToOpenBusinessApp&gt;1" />
-                  </FlowDecision.Condition>
+                <FlowDecision x:Name="__ReferenceID5" Condition="[int_attemptsToOpenBusinessApp&gt;1]" DisplayName="is not first attempt?" sap:VirtualizedContainerService.HintSize="108.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -321,14 +379,14 @@
           </ui:RetryScope.Condition>
         </ui:RetryScope>
       </Sequence>
-      <Sequence DisplayName="Seq_Prepare business app #3" sap:VirtualizedContainerService.HintSize="737.6,1024.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+      <Sequence DisplayName="Seq_Prepare business app #3" sap:VirtualizedContainerService.HintSize="450,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_22">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="675.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign sap:VirtualizedContainerService.HintSize="676,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Int32">[int_attemptsToOpenBusinessApp]</OutArgument>
           </Assign.To>
@@ -336,16 +394,16 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:RetryScope DisplayName="Retry_Prepare business app #3" sap:VirtualizedContainerService.HintSize="675.2,812.8" sap2010:WorkflowViewState.IdRef="RetryScope_3" NumberOfRetries="3" RetryInterval="00:00:03">
+        <ui:RetryScope DisplayName="Retry_Prepare business app #3" sap:VirtualizedContainerService.HintSize="676,816" sap2010:WorkflowViewState.IdRef="RetryScope_3" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #3" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+              <Flowchart DisplayName="Flowchart_inRetry_Prepare business app #3" sap:VirtualizedContainerService.HintSize="634,637.333333333333" sap2010:WorkflowViewState.IdRef="Flowchart_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-                    <av:Size x:Key="ShapeSize">60,75.2</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 300.095,107.7 300.095,127.7</av:PointCollection>
+                    <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,107.166666666667 268.895,107.166666666667 268.895,127.7</av:PointCollection>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -356,10 +414,10 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">230,495.6</av:Point>
-                      <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+                      <av:Size x:Key="ShapeSize">200,84.6666666666667</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_21">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -367,17 +425,14 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </Sequence>
                 </FlowStep>
-                <FlowDecision x:Name="__ReferenceID9" DisplayName="is second attempt?" sap:VirtualizedContainerService.HintSize="108.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
-                  <FlowDecision.Condition>
-                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="int_attemptsToOpenBusinessApp&gt;1" />
-                  </FlowDecision.Condition>
+                <FlowDecision x:Name="__ReferenceID9" Condition="[int_attemptsToOpenBusinessApp&gt;1]" DisplayName="is second attempt?" sap:VirtualizedContainerService.HintSize="106,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <av:Point x:Key="ShapeLocation">250.641666666667,247.7</av:Point>
-                      <av:Size x:Key="ShapeSize">108.8,87.2</av:Size>
+                      <av:Size x:Key="ShapeSize">106,86.6666666666667</av:Size>
                       <av:PointCollection x:Key="TrueConnector">250.641666666667,291.3 130,291.3 130,366.04</av:PointCollection>
-                      <av:PointCollection x:Key="FalseConnector">359.441666666667,291.3 389.441666666667,291.3 389.441666666667,465.6 330,465.6 330,495.6</av:PointCollection>
+                      <av:PointCollection x:Key="FalseConnector">356.641666666667,291.033333333333 386.641666666667,291.033333333333 386.641666666667,465.6 330,465.6 330,495.6</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <FlowDecision.True>
@@ -385,11 +440,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">30,366.04</av:Point>
-                          <av:Size x:Key="ShapeSize">200,68.8</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">130,434.84 130,530 230,530</av:PointCollection>
+                          <av:Size x:Key="ShapeSize">200,84.6666666666667</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">130,450.706666666667 130,537.933333333333 230,537.933333333333</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -409,11 +464,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">168.895,127.7</av:Point>
-                      <av:Size x:Key="ShapeSize">262.4,60</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">300.095,187.7 300.095,217.7 305.041666666667,217.7 305.041666666667,247.7</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">200,54</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">268.895,181.7 268.895,211.7 303.641666666667,211.7 303.641666666667,247.7</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="increase attemps var" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <Assign DisplayName="increase attemps var" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Assign_6">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[int_attemptsToOpenBusinessApp]</OutArgument>
                     </Assign.To>
