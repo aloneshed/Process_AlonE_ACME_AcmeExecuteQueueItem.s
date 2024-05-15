@@ -79,11 +79,11 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Seq_Init" sap:VirtualizedContainerService.HintSize="574,555.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
@@ -117,7 +117,7 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="434,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
+        <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="334,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
               <Flowchart DisplayName="Flowchart_inRetry_Prepare business outlook" sap:VirtualizedContainerService.HintSize="634,637.333333333333" sap2010:WorkflowViewState.IdRef="Flowchart_4">
@@ -198,54 +198,44 @@
                           <av:PointCollection x:Key="ConnectorLocation">130,450.706666666667 130,537.933333333333 230,537.933333333333</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="644.666666666667,1072" sap2010:WorkflowViewState.IdRef="Sequence_33">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582.666666666667,327.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582.666666666667,327.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                           <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,247.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,247.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_34">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,136.666666666667" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="outlook" />
+                              <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,136.666666666667" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="outlook" />
                             </Sequence>
                           </ui:CommentOut.Body>
                         </ui:CommentOut>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582.666666666667,961.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582.666666666667,594" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                           <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="546,881.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="546,514" sap2010:WorkflowViewState.IdRef="Sequence_35">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: תיבת דואר נכנס - aloneshed1@gmail.com - Outlook" sap:VirtualizedContainerService.HintSize="484,770.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
+                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: תיבת דואר נכנס - aloneshed1@gmail.com - Outlook" sap:VirtualizedContainerService.HintSize="484,403.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
                                 <uix:NApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,474.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ClickType="Single" DisplayName="Click 'פריטים חדשים'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
-                                        <uix:NClick.Target>
-                                          <uix:TargetAnchorable DesignTimeRectangle="1713, 111, 80, 105" FriendlyName="'פריטים חדשים'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' role='פריט תפריט' check:fulltext='פריטים חדשים' /&gt;" Guid="28f74984-a61b-46b2-bb5c-bff1f088431f" ImageBase64="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" InformativeScreenshot="e490f6eaa893175a0e549e21395cc26b.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                                        </uix:NClick.Target>
-                                      </uix:NClick>
-                                      <uix:NClick ClickType="Single" DisplayName="Click 'איש קשר'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
-                                        <uix:NClick.Target>
-                                          <uix:TargetAnchorable DesignTimeRectangle="2, 146, 384, 36" FriendlyName="'איש קשר'" FullSelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='איש קשר' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='איש קשר' role='menu item' automationid='' check:text='איש קשר' /&gt;" Guid="d25f0256-ba2f-435d-9fe3-04cde97c9930" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYQAAAAoCAYAAAD+FI3yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOVSURBVHhe7du9axRBGMdx/6pT0MrCUq6x0sZOsFmu9AUOIZXKCgpaaGG/hXiFIsREDbKkMBF8xSJCFhQhf8N4M7tztzvz7MtlsubkvgMfuezM7k6a5zczOU+Mx2OlDQYDAMAKsjlAIADAivMCYTgcAgBWEIEAADAIBACAQSAAAAwCAQBgEAgAAINAAAAYBAIAwCAQAAAGgQAAMAgEAFhCo9GoF9K7LAIBAJaQLt4HBwdHikAAgP8QgQAAMKRAuPsyU2dvvVPn1rbU47d/vP42BAKAQJFK0kx5LctUmsQqcsbHqe5Lul2PEqWfnMalMXVNvy+O5vc2ONwcpr+n/TWdMVHRkSXS+4v70ljoOzw3EJ69+ahOXntdsbXzozKmDYEAIFCpUErNKZ5yMY6VqfVO0cwLbaaSKP+5MRCKJhflqsPNofp7Vt9j++Zz9fp6DoS15z+9QHi08bsyZjKZiGw/gQCgF1E0LbBFAbUrfK15FV66ZgupV7hrFM/oMj5sDnJwzK5P/40r1/9NILBDALDk/OIpFeN8Fe4U0qJAd1nxW/LK3xc2h/oCH5kHO33FtWrQhHMDQVvf/qYuPdhRlx/uqve7fhhIuwPN9hMIAHrkF0+/GOeh4Rb+vI5KRzD1pEIvCZtDTSDYHUrR9N8corj7rmVR5UD4vpepq08/q4v3P6i9/V+G/qyv6T47rg2BAKBHLYFgj5XcgmmLq1N0mwu+XNQlIXOQAyF/d/6M4nPRsrRuvmHKgXD+djo7JrrzYt+wP+s+O07aHWi2n0AA0KOaQLAty6YF0/0mUnGPtzJvDoT8ud12FCFzEOUTm4+1YVIbXuHKgWCLv3bq+oZRvmbHtSEQAPSoZYfgsYVYD/FX+vK90fR6flOX3YEWMgeJ9Lzmr6KGKwfCmRublQAo0312nLQ70Gw/gQCgRx0DIdLn7Wm+qtatplh795a+ybRI4Q2Zg0R83ixYOu4yFlQOhFfpF3XlySd14d62On1z09Cf9bX17a+zcW0IBAA9qgmEhuYf38xVC689q+/+H9KskDlI5ECY6vHoqBwIR4VAANCjjoFgzvETFbespN1ASDrcIwmZg6Q2ELTiZUd9dEQgAFhpjYV3xeji3QfpXRaBAGApLNqkZyAMgQBgabBDOF4EAoClQSAcLwIBAGAQCAAAg0AAABgEAgDAIBAAAAaBAAAwCAQAgOEFwmAwAACsIAIBAGDkOTBWfwEMEKydHUVi9QAAAABJRU5ErkJggg==" InformativeScreenshot="8af6cc567f2c8d63db4cc4841f79fcc3.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                                        </uix:NClick.Target>
-                                      </uix:NClick>
                                     </Sequence>
                                   </ActivityAction>
                                 </uix:NApplicationCard.Body>

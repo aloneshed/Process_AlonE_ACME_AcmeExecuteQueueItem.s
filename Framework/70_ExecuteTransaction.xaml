@@ -153,7 +153,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart.StartNode>
     <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
@@ -667,12 +667,12 @@
         </If>
       </Sequence>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID4">
+    <FlowStep x:Name="__ReferenceID5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">260,143.333333333333</av:Point>
           <av:Size x:Key="ShapeSize">200,54</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">360,197.333333333333 360,246.666666666666</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">360,197.333333333333 360,256.666666666666</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Work Item Details" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="2f67cd64-3651-4942-89e0-fea5920df8e1" Version="V1">
@@ -753,12 +753,12 @@
         <FlowStep x:Name="__ReferenceID3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">260,246.666666666666</av:Point>
+              <av:Point x:Key="ShapeLocation">260,256.666666666666</av:Point>
               <av:Size x:Key="ShapeSize">200,54</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">360,300.666666666666 360,370</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">360,310.666666666666 360,370</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If Condition="[clientName.Length = 4]" DisplayName="If Client Name contains 4 characters, throw Buisness Exception" sap:VirtualizedContainerService.HintSize="530,548.666666666667" sap2010:WorkflowViewState.IdRef="If_8">
+          <If Condition="[clientName.Length = 4]" DisplayName="If Client Name contains 4 characters, throw Buisness Exception" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="If_8">
             <If.Then>
               <Sequence DisplayName="Throw Business Exception" sap:VirtualizedContainerService.HintSize="493.333333333333,352.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
@@ -875,7 +875,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">260,500</av:Point>
                       <av:Size x:Key="ShapeSize">200,54</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">360,554 360,604</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">360,554 360,623</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="cf93b393-c3e3-4a36-b682-4ef99869f4f3" Version="V1">
@@ -947,56 +947,117 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
                   <FlowStep.Next>
-                    <FlowStep x:Name="__ReferenceID2">
+                    <FlowStep x:Name="__ReferenceID4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">260,604</av:Point>
+                          <av:Point x:Key="ShapeLocation">260,623</av:Point>
                           <av:Size x:Key="ShapeSize">200,54</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">360,677 360,744</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MultipleAssign DisplayName="Multiple Assign - Output" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
-                        <ui:MultipleAssign.AssignOperations>
-                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_38">
-                              <ui:AssignOperation.To>
-                                <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientID")]</OutArgument>
-                              </ui:AssignOperation.To>
-                              <ui:AssignOperation.Value>
-                                <InArgument x:TypeArguments="x:Object">[clientID]</InArgument>
-                              </ui:AssignOperation.Value>
-                            </ui:AssignOperation>
-                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_39">
-                              <ui:AssignOperation.To>
-                                <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientName")]</OutArgument>
-                              </ui:AssignOperation.To>
-                              <ui:AssignOperation.Value>
-                                <InArgument x:TypeArguments="x:Object">[clientName]</InArgument>
-                              </ui:AssignOperation.Value>
-                            </ui:AssignOperation>
-                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
-                              <ui:AssignOperation.To>
-                                <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientCountry")]</OutArgument>
-                              </ui:AssignOperation.To>
-                              <ui:AssignOperation.Value>
-                                <InArgument x:TypeArguments="x:Object">[clientCountry]</InArgument>
-                              </ui:AssignOperation.Value>
-                            </ui:AssignOperation>
-                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_41">
-                              <ui:AssignOperation.To>
-                                <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientSecurityHash")]</OutArgument>
-                              </ui:AssignOperation.To>
-                              <ui:AssignOperation.Value>
-                                <InArgument x:TypeArguments="x:Object">[clientSecurityHash]</InArgument>
-                              </ui:AssignOperation.Value>
-                            </ui:AssignOperation>
-                          </scg:List>
-                        </ui:MultipleAssign.AssignOperations>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: תיבת דואר נכנס - aloneshed1@gmail.com - Outlook" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" OpenMode="IfNotOpen" ScopeGuid="536367d9-5845-40e4-b659-9862d220ad0b" Version="V1">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,935.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'פריטים חדשים'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="536367d9-5845-40e4-b659-9862d220ad0b" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="1713, 111, 80, 105" FriendlyName="'פריטים חדשים'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' role='פריט תפריט' check:fulltext='פריטים חדשים' /&gt;" Guid="0643e716-f9bd-4fb3-a5aa-fccdb6069195" ImageBase64="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" InformativeScreenshot="fca602bd3dd80e9ab0f680690246a8bb.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'איש קשר'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="536367d9-5845-40e4-b659-9862d220ad0b" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="2, 146, 384, 36" FriendlyName="'איש קשר'" FullSelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='איש קשר' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='איש קשר' role='menu item' automationid='' check:text='איש קשר' /&gt;" Guid="09ba3049-9bb7-4a7b-a461-0d6928ae96c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYQAAAAoCAYAAAD+FI3yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOVSURBVHhe7du9axRBGMdx/6pT0MrCUq6x0sZOsFmu9AUOIZXKCgpaaGG/hXiFIsREDbKkMBF8xSJCFhQhf8N4M7tztzvz7MtlsubkvgMfuezM7k6a5zczOU+Mx2OlDQYDAMAKsjlAIADAivMCYTgcAgBWEIEAADAIBACAQSAAAAwCAQBgEAgAAINAAAAYBAIAwCAQAAAGgQAAMAgEAFhCo9GoF9K7LAIBAJaQLt4HBwdHikAAgP8QgQAAMKRAuPsyU2dvvVPn1rbU47d/vP42BAKAQJFK0kx5LctUmsQqcsbHqe5Lul2PEqWfnMalMXVNvy+O5vc2ONwcpr+n/TWdMVHRkSXS+4v70ljoOzw3EJ69+ahOXntdsbXzozKmDYEAIFCpUErNKZ5yMY6VqfVO0cwLbaaSKP+5MRCKJhflqsPNofp7Vt9j++Zz9fp6DoS15z+9QHi08bsyZjKZiGw/gQCgF1E0LbBFAbUrfK15FV66ZgupV7hrFM/oMj5sDnJwzK5P/40r1/9NILBDALDk/OIpFeN8Fe4U0qJAd1nxW/LK3xc2h/oCH5kHO33FtWrQhHMDQVvf/qYuPdhRlx/uqve7fhhIuwPN9hMIAHrkF0+/GOeh4Rb+vI5KRzD1pEIvCZtDTSDYHUrR9N8corj7rmVR5UD4vpepq08/q4v3P6i9/V+G/qyv6T47rg2BAKBHLYFgj5XcgmmLq1N0mwu+XNQlIXOQAyF/d/6M4nPRsrRuvmHKgXD+djo7JrrzYt+wP+s+O07aHWi2n0AA0KOaQLAty6YF0/0mUnGPtzJvDoT8ud12FCFzEOUTm4+1YVIbXuHKgWCLv3bq+oZRvmbHtSEQAPSoZYfgsYVYD/FX+vK90fR6flOX3YEWMgeJ9Lzmr6KGKwfCmRublQAo0312nLQ70Gw/gQCgRx0DIdLn7Wm+qtatplh795a+ybRI4Q2Zg0R83ixYOu4yFlQOhFfpF3XlySd14d62On1z09Cf9bX17a+zcW0IBAA9qgmEhuYf38xVC689q+/+H9KskDlI5ECY6vHoqBwIR4VAANCjjoFgzvETFbespN1ASDrcIwmZg6Q2ELTiZUd9dEQgAFhpjYV3xeji3QfpXRaBAGApLNqkZyAMgQBgabBDOF4EAoClQSAcLwIBAGAQCAAAg0AAABgEAgDAIBAAAAaBAAAwCAQAgOEFwmAwAACsIAIBAGDkOTBWfwEMEKydHUVi9QAAAABJRU5ErkJggg==" InformativeScreenshot="ae08927db787a5bbde7f439698ad64e1.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'שם מלא'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,221.333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="536367d9-5845-40e4-b659-9862d220ad0b" Text="[CurrentTransaction.SpecificContent(&quot;WIID&quot;).ToString]" Version="V1">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="808, 245, 333, 29" FriendlyName="'‏‏עריכה שם מלא'" FullSelectorArgument="&lt;uia automationid='4096' cls='RichEdit20WPT' name='שם מלא' /&gt;" FuzzySelectorArgument="&lt;uia automationid='4096' cls='RichEdit20WPT' name='שם מלא' role='‏‏עריכה' /&gt;" Guid="0115c57e-8919-4c62-b670-76f7c0bf659b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVEAAAAhCAYAAABgI5g3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACYSURBVHhe7dQxFYNAAECxqjkJp6VSUQdsXYAH5a8ZYiGfMcYGwDsSBQh+iX6XFYCHThOdcwJwQ6IAgUQBAokCBBIFCCQKEEgUIJAoQCBRgECiAIFEAQKJAgQSBQgkChBIFCCQKEAgUYBAogCBRAECiQIEEgUIJAoQSBQgkChAIFGAQKIAgUQBgstEAXjmkCgA/5MowGtj2wFfTbSZSMifVQAAAABJRU5ErkJggg==" InformativeScreenshot="4a9927a561c92dfaa3e024e3ade74b7a.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='‫ללא שם‬ - איש קשר  ' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="1189, 245, 203, 29" FriendlyName="'שם מלא...'" FullSelectorArgument="&lt;uia automationid='28458' cls='Button' name='שם מלא...' /&gt;" FuzzySelectorArgument="&lt;uia automationid='28458' cls='Button' name='שם מלא...' role='‏‏לחצן' check:fulltext='שם מלא...' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM8AAAAhCAYAAAB+z/+tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVHhe7djBcYMwEEDRVEMJFEMF7oFOaIRGKIQOFJAgXrQrISl2DvE/vJkEI2PP7Lewv7qucwDqEQ/Q6Ceex+MBoIAZT9/3ADKIB2hEPEAj4gEaEQ/QiHiARsQDNCIevMUwLW5dZzcaj/0XxIO3IB6gEfEAkXFetygWNw36MR/MMrnh/HvdzzXM43PdMLnlPHb+/cO+ztXgpkWukeJ4w7nLNIhjx3uSr6kf3bytj8+LEQ8qncOqdxUZjzx+dawXwypDkwMbjt8FZAex06Fb5xqh+IjvwyUe1JO7hTiuP8FtIQoZXxhgHZ4OTUvHo9cb5xqh6NdnIx40CZ/qq5vH81gYzOf/aal4rLX+OtndLBdPvF6fq58/Di6NeFBtH7h9AENA4VPbB1EwcDs1sJnbJP+8v4jnuv56bog4um7hLduOeFBnnMWucdxubVLDqxy3fHKX0TtR9NiL4zm/X1nX1DtRGvGgih8uucP4mErjsW+JcgP7jniSr9W/l7JdZ0c8qGAPf9g57obOXls3/JZXxVP287REPB8oDPt1UMqO5QNI/kJ13Krlhjb1Q8OfxFO1ez4Rzwd6fTybIxA96FscueGPv6Afg3xREI9aI0XxpB+vQzxAI+LBx1A7TgHreU7EAzQiHqAR8QCNiAdoRDxAo2Q8AO6peADUIR6gSee+AdD0k/ezdPkzAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'שמור וסגור'" sap:VirtualizedContainerService.HintSize="388,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="536367d9-5845-40e4-b659-9862d220ad0b" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="1355, 102, 62, 105" FriendlyName="'שמור וסגור'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='איש קשר' /&gt;&lt;uia cls='NetUIChunk' name='פעולות' /&gt;&lt;uia automationid='SaveAndClose' cls='NetUIRibbonButton' name='שמור וסגור' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='איש קשר' /&gt;&lt;uia cls='NetUIChunk' name='פעולות' /&gt;&lt;uia automationid='SaveAndClose' cls='NetUIRibbonButton' name='שמור וסגור' role='לחצן' check:fulltext='שמור וסגור' /&gt;" Guid="571bc091-ab44-4b21-a1fd-6dba6d063cff" ImageBase64="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" InformativeScreenshot="5adfe2dcbc25abd4358ced601989e74e.png" ScopeSelectorArgument="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='‫ללא שם‬ - איש קשר  ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" IconBase64="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" InformativeScreenshot="00f6e657113313e7ec0d224526978294.png" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook'/&gt;" />
+                        </uix:NApplicationCard.TargetApp>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </ui:MultipleAssign>
+                      </uix:NApplicationCard>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">260,744</av:Point>
+                              <av:Size x:Key="ShapeSize">200,54</av:Size>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MultipleAssign DisplayName="Multiple Assign - Output" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+                            <ui:MultipleAssign.AssignOperations>
+                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_38">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientID")]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:Object">[clientID]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_39">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientName")]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:Object">[clientName]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientCountry")]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:Object">[clientCountry]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_41">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:Object">[io_dic_AllTransactionData("ClientSecurityHash")]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:Object">[clientSecurityHash]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                              </scg:List>
+                            </ui:MultipleAssign.AssignOperations>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:MultipleAssign>
+                        </FlowStep>
+                      </FlowStep.Next>
                     </FlowStep>
                   </FlowStep.Next>
                 </FlowStep>
@@ -1053,5 +1114,6 @@
         </ui:CommentOut.Body>
       </ui:CommentOut>
     </FlowStep>
+    <x:Reference>__ReferenceID4</x:Reference>
   </Flowchart>
 </Activity>
