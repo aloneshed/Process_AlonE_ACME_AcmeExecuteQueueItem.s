@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Type 'hm:ProcessSetup' ('clr-namespace:HMS.Modeling;assembly=Modeling') could not be resolved and was automatically replaced with 'UnknownType'" Name="io_ProcessSetup" Type="InOutArgument(hm:ProcessSetup)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>592,620</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>564,620</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -117,7 +117,7 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="334,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
+        <ui:RetryScope DisplayName="Retry_Prepare business app #1" sap:VirtualizedContainerService.HintSize="434,232.666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
               <Flowchart DisplayName="Flowchart_inRetry_Prepare business outlook" sap:VirtualizedContainerService.HintSize="634,637.333333333333" sap2010:WorkflowViewState.IdRef="Flowchart_4">
@@ -140,43 +140,24 @@
                       <av:Size x:Key="ShapeSize">200,84.6666666666667</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <Sequence DisplayName="Seq_actions that validate system is active" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_24">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1052.66666666667,520.666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1016,440.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="954,330" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V1">
-                            <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </Sequence>
-                            </uix:NCheckState.IfExists>
-                            <uix:NCheckState.IfNotExists>
-                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </Sequence>
-                            </uix:NCheckState.IfNotExists>
-                          </uix:NCheckState>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
+                    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'פריטים חדשים'" sap:VirtualizedContainerService.HintSize="388,107.333333333333" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                      <ui:WaitUiElementAppear.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1cb24ff-d7c0-49dd-8f61-7e98ac73618d" InformativeScreenshot="4dea1ade9735ecc3667c301e6adfa616" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook' /&gt;&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='בית' /&gt;&lt;uia cls='NetUIChunk' name='חדש' /&gt;&lt;uia automationid='MailNewItemMenu' cls='NetUIAnchor' name='פריטים חדשים' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:WaitUiElementAppear.Target>
+                    </ui:WaitUiElementAppear>
                   </Sequence>
                 </FlowStep>
                 <FlowDecision x:Name="__ReferenceID1" Condition="[int_attemptsToOpenBusinessApp&gt;1]" DisplayName="is not first attempt?" sap:VirtualizedContainerService.HintSize="109.333333333333,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
@@ -198,54 +179,32 @@
                           <av:PointCollection x:Key="ConnectorLocation">130,450.706666666667 130,537.933333333333 230,537.933333333333</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="644.666666666667,1072" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                      <Sequence DisplayName="Seq_Kill process and launch business app" sap:VirtualizedContainerService.HintSize="200,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_33">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582.666666666667,327.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,247.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,136.666666666667" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="outlook" />
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                        </ui:CommentOut>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582.666666666667,594" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="546,514" sap2010:WorkflowViewState.IdRef="Sequence_35">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: תיבת דואר נכנס - aloneshed1@gmail.com - Outlook" sap:VirtualizedContainerService.HintSize="484,403.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
-                                <uix:NApplicationCard.Body>
-                                  <ActivityAction x:TypeArguments="x:Object">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </Sequence>
-                                  </ActivityAction>
-                                </uix:NApplicationCard.Body>
-                                <uix:NApplicationCard.TargetApp>
-                                  <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" IconBase64="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" InformativeScreenshot="9ab8165b92b45e6e5bd127a4b00b2386.png" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook'/&gt;" />
-                                </uix:NApplicationCard.TargetApp>
-                              </uix:NApplicationCard>
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                        </ui:CommentOut>
+                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="484,136.666666666667" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="outlook" />
+                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: תיבת דואר נכנס - aloneshed1@gmail.com - Outlook" sap:VirtualizedContainerService.HintSize="484,403.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Always" ScopeGuid="86e59b10-c05c-41c7-bfc1-d6c80b75dfd0" Version="V1">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,107.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\outlook.exe" IconBase64="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" InformativeScreenshot="9ab8165b92b45e6e5bd127a4b00b2386.png" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='תיבת דואר נכנס - aloneshed1@gmail.com - Outlook'/&gt;" />
+                          </uix:NApplicationCard.TargetApp>
+                        </uix:NApplicationCard>
                       </Sequence>
                       <FlowStep.Next>
                         <x:Reference>__ReferenceID0</x:Reference>
